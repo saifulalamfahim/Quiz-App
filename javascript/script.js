@@ -17,10 +17,18 @@ exit_btn.onclick = ()=> {
 continue_btn.onclick = ()=> {
     info_box.classList.remove("activeInfo"); //   hide the info box
     quiz_box.classList.add("activeQuiz"); //   show the quiz box
-    showQuestion(4);
+    showQuestion(0);
 }
 
 let que_count = 0;
+
+const next_btn = quiz_box.querySelector(".next_btn");
+
+// if next button clicked
+next_btn.onclick = ()=> {
+    que_count++;
+    showQuestion(que_count);
+}
 
 // getting question and option from array
 function showQuestion(index){
@@ -33,5 +41,5 @@ function showQuestion(index){
     + '<div class="option">'+ questions[index].options[3] +'<span></span></div>'
     +'<div class="option">'+ questions[index].options[4] +'<span></span></div>';
     que_text.innerHTML = que_tag; //   When clicked continue button then it shows up
-    option_list.innerHTML = option_tag;
+    option_list.innerHTML = option_tag; //   When clicked continue button then it also shows up
 }
