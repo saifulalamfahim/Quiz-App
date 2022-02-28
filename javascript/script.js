@@ -16,5 +16,15 @@ exit_btn.onclick = ()=> {
 // if continue button clicked
 continue_btn.onclick = ()=> {
     info_box.classList.remove("activeInfo"); //   hide the info box
-    quiz_box.classList.add("activeQuiz") //   show the quiz box
+    quiz_box.classList.add("activeQuiz"); //   show the quiz box
+    showQuestion();
+}
+
+let que_count = 0;
+
+// getting question and option from array
+function showQuestion(){
+    const que_text = document.querySelector(".que_text");
+    let que_tag = '<span>'+ questions[4].question +'</span>';
+    que_text.innerHTML = que_tag; //   When clicked continue button then it shows up
 }
