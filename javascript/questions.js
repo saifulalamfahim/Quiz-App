@@ -4,7 +4,7 @@ let questions = [
         numb: 1,
         question: "Which one is the smallest ocean in the world?",
         answer: "Arctic",
-        option: [
+        options: [
             "Indian",
             "Pacific",
             "Atlantic",
@@ -16,7 +16,7 @@ let questions = [
         numb: 2,
         question: "Dead sea is located between which two countries?",
         answer: "Jordan and Israel",
-        option: [
+        options: [
             "Jordan and sudan",
             "Jordan and Israel",
             "Turkey and UAE",
@@ -28,7 +28,7 @@ let questions = [
         numb: 3,
         question: "Which continent has the highest number if countries?",
         answer: "Africa",
-        option: [
+        options: [
             "Asia",
             "Europe",
             "North America",
@@ -40,7 +40,7 @@ let questions = [
         numb: 4,
         question: "Which one is the world's highest-altitude civilian airport?",
         answer: "Daocheng Yading Airport, China",
-        option: [
+        options: [
             "Daocheng Yading Airport, China",
             "Kushok Bakula Rimpochhe Airport, Leh",
             "Qamdo Bamda Airport, China",
@@ -52,7 +52,7 @@ let questions = [
         numb: 5,
         question: "Which one is the largest tropical rain forest in the world?",
         answer: "Amazon",
-        option: [
+        options: [
             "Amazon",
             "Bosawas",
             "Southeast Asian Rain Forest",
