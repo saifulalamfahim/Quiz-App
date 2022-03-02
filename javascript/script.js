@@ -68,11 +68,19 @@ function optionSelected(answer){
     }else{
         answer.classList.add("incorrect");
         console.log("wromg");
+        
+        // if answert is incorrect then autometically selected the correct answer
+        for (let i = 0; i < allOptions; i++) {
+           if(option_list.children[i].textContent == correctAns){
+            option_list.children[i].setAttribute("class", "option correct");
+           }
+            
+        }
     }
     // if user clicked one option then disabled all other options
-for (let i = 0; i < allOptions; i++) {
-    option_list.children[i].classList.add("disabled");
-}
+    for (let i = 0; i < allOptions; i++) {
+        option_list.children[i].classList.add("disabled");
+    }
 }
 
 
