@@ -58,6 +58,9 @@ function showQuestion(index){
     }
 }
 
+let tickIcon = '<div class="icon tick"><i class="material-icons">check</i>';
+let crossIcon = '<div class="icon cross"><i class="material-icons">clear</i>';
+
 function optionSelected(answer){
     let userAns = answer.textContent;
     let correctAns = questions[que_count].answer;
@@ -65,14 +68,17 @@ function optionSelected(answer){
     if (userAns == correctAns){
         answer.classList.add("correct");
         console.log("right");
+        answer.insertAdjacentHTML ("beforeend", tickIcon);
     }else{
         answer.classList.add("incorrect");
         console.log("wromg");
+        answer.insertAdjacentHTML ("beforeend", crossIcon);
         
         // if answert is incorrect then autometically selected the correct answer
         for (let i = 0; i < allOptions; i++) {
            if(option_list.children[i].textContent == correctAns){
             option_list.children[i].setAttribute("class", "option correct");
+            option_list.children[i].insertAdjacentHTML ("beforeend", tickIcon);
            }
             
         }
