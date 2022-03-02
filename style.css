@@ -206,14 +206,31 @@ section .option_list .option:hover{
 }
 .option_list .option .icon.tick{
     color: #23903c;
-    border-color: #23903c;
-    background: #d4edda;
+    border-color: #d4edda;
+    background: #c3e6cb;
 }
 .option_list .option .icon.cross{
     color: #a42834;
-    border-color: #f8d7da;
+   background: #f8d7da;
     border-color: #a42834;
 }
+
+/* for javascript start */
+.option_list .option.correct{
+    color: #23903c;
+    border-color: #d4edda;
+    background: #c3e6cb;
+}
+.option_list .option.incorrect{
+    color: #a42834;
+   background: #f8d7da;
+    border-color: #f8d7da;
+}
+.option_list .option.disabled{
+    pointer-events: none;
+}
+/* for javascript end */
+
 .quiz_box footer .total_que span{
     display: flex;
     user-select: none;
