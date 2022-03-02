@@ -166,7 +166,7 @@ body{
     bottom: 0px;
     left: 0px;
     height: 3px;
-    width: 50%;
+    /* width: 50%; */
     background: #007bff;
 }
 .quiz_box section{
