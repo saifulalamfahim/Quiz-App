@@ -48,6 +48,7 @@ next_btn.onclick = ()=> {
     startTimer(timeValue);
     clearInterval(counterLine);
     stratTimerLine(widthValue);
+    next_btn.style.display = "none";
   }else{
       console.log("completed");
   }
@@ -102,6 +103,7 @@ function optionSelected(answer){
     for (let i = 0; i < allOptions; i++) {
         option_list.children[i].classList.add("disabled");
     }
+    next_btn.style.display = "block";
 }
 
 function startTimer(time) {
@@ -138,5 +140,5 @@ function queCounter(index){
     const bottom_ques_counter = quiz_box.querySelector(".total_que");
     let totalQuesCountTag = '<span><p>'+ index +'</p>of<p>' + questions.length +'</p>Question</span>';
     bottom_ques_counter.innerHTML = totalQuesCountTag;
-
+ 
 }
